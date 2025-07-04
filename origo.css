@@ -193,7 +193,7 @@ body.freestyle01 #footer p a:hover {color:#555;}
 #corner-logo {
   position: fixed;
   top: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 1000;
 }
 
