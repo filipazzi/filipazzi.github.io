@@ -161,8 +161,8 @@ body.light #footer a {color:#555; border-bottom:1px dotted #ddd;}
 body.light #footer a:hover {color:#444; border-bottom:1px dotted #eee;}
 
 /* Alternate colors, apply by adding class="blue" (or any of the other available colors) to the body HTML element */
-body.blue a {color:#3288a8;}
-body.blue h1, body.blue h2, body.blue h3 {color:#3288a8;}
+body.blue a {color:#00539B;}
+body.blue h1, body.blue h2, body.blue h3 {color:#00539B;}
 body.pink a {color:#f06ba0;}
 body.pink h1, body.pink h2, body.pink h3 {color:#f06ba0;}
 body.orange a {color:#e58c24;}
@@ -181,7 +181,7 @@ body.freestyle01 h3 {font-size:1.3em;}
 body.freestyle01 ul.menu {list-style:none; margin:0 0 15px 0; border:0; padding:0; position:relative;}
 body.freestyle01 ul.menu li {list-style:none; text-align:left; font-size:1.2em; margin:0 0 1px; border:0; color:#888;}
 body.freestyle01 ul.menu li a {font-size:1em; color:#555; padding:7px 5px 7px 8px; border-left:5px solid #ccc; background-color:#eaeaea; display:block; font-weight:400;}
-body.freestyle01 ul.menu li a:hover, body.freestyle01 ul.menu li a.current {color:#333; border-color:#3288a8; background-color:#dadada;text-decoration:none;}
+body.freestyle01 ul.menu li a:hover, body.freestyle01 ul.menu li a.current {color:#333; border-color:#00539B; background-color:#dadada;text-decoration:none;}
 body.freestyle01 ul.menu ul.subpages {margin:9px 0 -10px 15px;}
 body.freestyle01 ul.menu ul.subpages a {font-size:0.8em; padding:4px 5px 4px 8px;}
 body.freestyle01 #footer {font-size:0.9em; color:#999;}
