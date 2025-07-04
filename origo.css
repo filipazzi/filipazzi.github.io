@@ -187,3 +187,17 @@ body.freestyle01 #footer {font-size:0.9em; color:#999;}
 body.freestyle01 #footer p {color:#999;}
 body.freestyle01 #footer p a {color:#999;}
 body.freestyle01 #footer p a:hover {color:#555;}
+
+/* Logo addition */
+
+#corner-logo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#corner-logo img {
+  max-width: 200px; /* Adjust size as needed */
+  height: auto;
+}
