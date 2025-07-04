@@ -1,211 +1,190 @@
-/* Modern Reset */
-*, *::before, *::after {
-  box-sizing: border-box;
+/*
+Original design: Origo (v1.1 - Oct 04, 2012) - A free xhtml/css website template by Andreas Viklund.
+For more information, see http://andreasviklund.com/templates/origo/
+*/
+
+*{margin:0; padding:0;}
+
+/* General styles */
+/* Importing Google Font (Economica + fallback) */
+@import url('https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap');
+
+/* Base styles */
+body {
+  background: #0a0a0a url('images/background.jpg') top center no-repeat;
+  color: #cccccc;
+  font-family: 'Economica', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap');
-
-/* Root Variables */
-:root {
-  --main-color: #d06060;
-  --text-light: #ccc;
-  --text-dark: #555;
-  --bg-dark: #0a0a0a;
-  --bg-light: #f5f5f5;
-  --link-hover: #e07070;
-}
-
-/* Base Styles */
-body {
-  font-family: 'Economica', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  background: var(--bg-dark) url('images/background.jpg') top center no-repeat;
-  color: var(--text-light);
-}
-
-/* Links */
 a {
-  color: var(--main-color);
+  color: #d06060;
   text-decoration: none;
-  transition: color 0.2s ease;
+  font-weight: 400;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
 a:hover {
-  color: var(--link-hover);
   text-decoration: underline;
+  color: #e07070;
 }
 
-/* Headings */
-h1, h2, h3 {
+/* Typography */
+p,
+ul,
+ol,
+dl {
+  margin: 0 0 1em 0;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: #d06060;
   font-family: 'Economica', sans-serif;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 0.5em;
+  margin: 0 0 0.5em 0;
 }
 
 h1 {
   font-size: 3.5rem;
-  color: #ddd;
+  color: #dddddd;
+}
+
+h1 a {
+  text-transform: none;
+  font-weight: 400;
+  color: inherit;
+}
+
+h1 a:hover {
+  color: #eeeeee;
+  text-decoration: none;
 }
 
 h2 {
   font-size: 2rem;
-  color: #bbb;
+  color: #bbbbbb;
 }
 
 h3 {
   font-size: 1.5rem;
-  color: #aaa;
+  color: #aaaaaa;
 }
 
-/* Paragraphs & Lists */
-p, ul, ol, dl {
-  margin-bottom: 1em;
-}
 
-/* Layout Container */
-.container {
-  max-width: 1200px;
-  padding: 0 1rem;
-  margin: 40px auto 0;
-}
+/* Main layout container */
+#layout {margin:40px auto 0; width:960px;}
+body.wider #layout {margin:40px auto 0; width:1200px;}
 
 /* Footer */
-#footer {
-  background: var(--bg-dark) url(images/insidebg.jpg) top center no-repeat;
-  color: var(--text-dark);
-  border-top: 1px dotted #1a1a1a;
-  padding: 20px 0;
-  text-align: center;
-}
+#footer {background:#0a0a0a url(images/insidebg.jpg) top center no-repeat;}
+#footer .col {color:#555; border-top:1px dotted #1a1a1a; padding:20px 0;}
+#footer p {text-align:center;}
+#footer a {color:#555; font-weight:400; text-decoration:none; border-bottom:1px dotted #333;}
+#footer a:hover {color:#aaa; text-decoration:none; border-bottom:1px dotted #888;}
 
-#footer a {
-  color: var(--text-dark);
-  border-bottom: 1px dotted #333;
-}
+/* Grid classes, fixed width, 960px with 12 columns */
+.col {float:left; margin:0 10px; overflow:hidden; float:left; display:inline;}
+.col img {max-width:100%;}
+.row {width:960px; margin:20px auto 0; overflow:hidden;}
+.row .row {margin:0 -10px; width:auto; display:inline-block;}
+.c1 {width:60px;}
+.c2 {width:140px;}
+.c3 {width:220px;}
+.c4 {width:300px;}
+.c5 {width:380px;}
+.c6 {width:460px;}
+.c7 {width:540px;}
+.c8 {width:620px;}
+.c9 {width:700px;}
+.c10 {width:780px;}
+.c11 {width:860px;}
+.c12 {width:940px;}
 
-#footer a:hover {
-  color: #aaa;
-  border-bottom: 1px dotted #888;
-}
+/* Grid classes, fixed width, 1200px with 12 columns - add class="wider" to the <body> element to use this */
+body.wider .row {width:1200px;}
+body.wider .c1 {width:80px;}
+body.wider .c2 {width:180px;}
+body.wider .c3 {width:280px;}
+body.wider .c4 {width:380px;}
+body.wider .c5 {width:480px;}
+body.wider .c6 {width:580px;}
+body.wider .c7 {width:680px;}
+body.wider .c8 {width:780px;}
+body.wider .c9 {width:880px;}
+body.wider .c10 {width:980px;}
+body.wider .c11 {width:1080px;}
+body.wider .c12 {width:1180px;}
 
-/* Menu */
-ul.menu {
-  list-style: none;
-  border-top: 1px solid #333;
-  padding: 10px 0;
-  text-align: center;
-}
+/* Menu list styles */
+ul.menu {list-style:none; margin:0; padding:10px 0; border-top:1px solid #333;}
+ul.menu li {list-style:none; text-align:center; font-size:1.2em; margin:0 0 10px; padding:0 0 8px 0; color:#888; border-bottom:1px solid #333;}
+ul.menu li a {font-size:1.2em; font-weight:400;}
+ul.menu li a:hover {color:#eee; text-decoration:none;}
 
-ul.menu li {
-  border-bottom: 1px solid #333;
-  color: #888;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
+/* Additional text classes */
+.slogan {color:#bbb; font-size:1.2em;}
+.alignleft {text-align:left;}
+.alignright {text-align:right;}
+.aligncenter {text-align:center;}
+.alignjustify {text-align:justify;}
+.nomargin {margin:0; padding:0;}
+.separator {height:100px; margin:0; padding:0; background: #0a0a0a url(images/insidebg2.jpg) bottom center no-repeat; border-bottom:1px dotted #1a1a1a;}
+.larger {font-size:1.2em;}
+.smaller {font-size:0.9em;}
+.spacer {margin:0 20px;}
+.clear {clear:both;}
+.hide {display:none;}
 
-ul.menu li a {
-  font-weight: 400;
-  font-size: 1.2em;
-}
+/* Light styles, apply by using class="light" on the body HTML element */
+body.light {background:#f5f5f5 url(images/background-light.jpg) top center no-repeat; color:#555;}
+body.light a {color:#d06060;}
+body.light a:hover {color:#555;}
+body.light h1 {color:#888; font-size:3.6em; margin-bottom:0;}
+body.light h1 a:hover {color:#303030;}
+body.light h2 {color:#555;}
+body.light h1, body.light h2, body.light h3 {color:#d06060;}
+body.light ul.menu {border-top:1px solid #ddd;}
+body.light ul.menu li {border-bottom:1px solid #ddd;}
+body.light ul.menu li a:hover {color:#333;}
+body.light .separator {background: #f5f5f5 url(images/insidebg2-light.jpg) bottom center no-repeat; border-bottom:1px dotted #ccc;}
+body.light .slogan {color:#888;}
+body.light #footer {background:#f5f5f5 url(images/insidebg-light.jpg) top center no-repeat;}
+body.light #footer .col {color:#555; border-top:1px dotted #ccc;}
+body.light #footer a {color:#555; border-bottom:1px dotted #ddd;}
+body.light #footer a:hover {color:#444; border-bottom:1px dotted #eee;}
 
-ul.menu li a:hover {
-  color: #eee;
-}
+/* Alternate colors, apply by adding class="blue" (or any of the other available colors) to the body HTML element */
+body.blue a {color:#3288a8;}
+body.blue h1, body.blue h2, body.blue h3 {color:#3288a8;}
+body.pink a {color:#f06ba0;}
+body.pink h1, body.pink h2, body.pink h3 {color:#f06ba0;}
+body.orange a {color:#e58c24;}
+body.orange h1, body.orange h2, body.orange h3 {color:#e58c24;}
 
-/* Utility Classes */
-.alignleft { text-align: left; }
-.alignright { text-align: right; }
-.aligncenter { text-align: center; }
-.alignjustify { text-align: justify; }
-
-.spacer { margin: 0 20px; }
-.larger { font-size: 1.2em; }
-.smaller { font-size: 0.9em; }
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive Grid (12 columns, flex-based) */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
-}
-
-.col {
-  padding: 0 10px;
-  flex-grow: 1;
-}
-
-.c1  { flex: 0 0 8.33%; }
-.c2  { flex: 0 0 16.66%; }
-.c3  { flex: 0 0 25%; }
-.c4  { flex: 0 0 33.33%; }
-.c5  { flex: 0 0 41.66%; }
-.c6  { flex: 0 0 50%; }
-.c7  { flex: 0 0 58.33%; }
-.c8  { flex: 0 0 66.66%; }
-.c9  { flex: 0 0 75%; }
-.c10 { flex: 0 0 83.33%; }
-.c11 { flex: 0 0 91.66%; }
-.c12 { flex: 0 0 100%; }
-
-.col img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Light Mode */
-body.light {
-  background: var(--bg-light) url(images/background-light.jpg) top center no-repeat;
-  color: var(--text-dark);
-}
-
-body.light a { color: var(--main-color); }
-body.light a:hover { color: #555; }
-
-body.light h1, body.light h2, body.light h3 {
-  color: var(--main-color);
-}
-
-body.light ul.menu {
-  border-top: 1px solid #ddd;
-}
-
-body.light ul.menu li {
-  border-bottom: 1px solid #ddd;
-}
-
-body.light ul.menu li a:hover {
-  color: #333;
-}
-
-body.light .separator {
-  background: var(--bg-light) url(images/insidebg2-light.jpg) bottom center no-repeat;
-  border-bottom: 1px dotted #ccc;
-}
-
-/* Color Schemes */
-body.blue h1, body.blue h2, body.blue h3,
-body.blue a { color: #3288a8; }
-
-body.pink h1, body.pink h2, body.pink h3,
-body.pink a { color: #f06ba0; }
-
-body.orange h1, body.orange h2, body.orange h3,
-body.orange a { color: #e58c24; }
-
-/* Separator */
-.separator {
-  height: 100px;
-  background: var(--bg-dark) url(images/insidebg2.jpg) bottom center no-repeat;
-  border-bottom: 1px dotted #1a1a1a;
-}
+/* Freestyle01 additions */
+body.freestyle01 {font:84% Tahoma,sans-serif;}
+body.freestyle01 #layout {margin:20px auto 0; width:960px;}
+body.freestyle01 h1, body.freestyle01 h2, body.freestyle01 h3, body.freestyle01 ul.menu li a
+{font-family: 'Dosis', sans-serif; text-transform:uppercase;}
+body.freestyle01 p.slogan {font-family: 'Dosis', sans-serif; text-transform:uppercase; margin-top:10px; font-size:1.4em;}
+body.freestyle01 h1 {line-height:1.7em;}
+body.freestyle01 h1 {font-size:2.6em;}
+body.freestyle01 h2 {font-size:1.8em;}
+body.freestyle01 h3 {font-size:1.3em;}
+body.freestyle01 ul.menu {list-style:none; margin:0 0 15px 0; border:0; padding:0; position:relative;}
+body.freestyle01 ul.menu li {list-style:none; text-align:left; font-size:1.2em; margin:0 0 1px; border:0; color:#888;}
+body.freestyle01 ul.menu li a {font-size:1em; color:#555; padding:7px 5px 7px 8px; border-left:5px solid #ccc; background-color:#eaeaea; display:block; font-weight:400;}
+body.freestyle01 ul.menu li a:hover, body.freestyle01 ul.menu li a.current {color:#333; border-color:#3288a8; background-color:#dadada;text-decoration:none;}
+body.freestyle01 ul.menu ul.subpages {margin:9px 0 -10px 15px;}
+body.freestyle01 ul.menu ul.subpages a {font-size:0.8em; padding:4px 5px 4px 8px;}
+body.freestyle01 #footer {font-size:0.9em; color:#999;}
+body.freestyle01 #footer p {color:#999;}
+body.freestyle01 #footer p a {color:#999;}
+body.freestyle01 #footer p a:hover {color:#555;}
