@@ -53,6 +53,7 @@ h3 {
 h1 {
   font-size: 3.5rem;
   color: #dddddd;
+  margin-bottom: 40px; 
 }
 
 h1 a {
