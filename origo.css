@@ -162,7 +162,7 @@ body.light #footer a:hover {color:#444; border-bottom:1px dotted #eee;}
 
 /* Alternate colors, apply by adding class="blue" (or any of the other available colors) to the body HTML element */
 body.blue a {color:#00539B;}
-body.blue h1, body.blue h2, body.blue h3 {color:#00539B;}
+body.blue h1, body.blue h2, body.blue h3 {color:#012169;}
 body.pink a {color:#f06ba0;}
 body.pink h1, body.pink h2, body.pink h3 {color:#f06ba0;}
 body.orange a {color:#e58c24;}
