@@ -1,89 +1,70 @@
-/* Reset & Base Setup */
-*, *::before, *::after {
-  box-sizing: border-box;
+/* Importing Google Font (Economica + fallback) */
+@import url('https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap');
+
+/* Base styles */
+body {
+  background: #0a0a0a url('images/background.jpg') top center no-repeat;
+  color: #cccccc;
+  font-family: 'Economica', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #000;
-  padding: 2rem;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-
-/* Typography */
-p, ul, ol {
-  margin-bottom: 1.5rem;
-}
-
 a {
-  color: #000;
-  text-decoration: underline;
-  transition: opacity 0.2s ease;
+  color: #d06060;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
 a:hover {
-  opacity: 0.6;
+  text-decoration: underline;
+  color: #e07070;
 }
 
-/* Layout */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+/* Typography */
+p,
+ul,
+ol,
+dl {
+  margin: 0 0 1em 0;
+  line-height: 1.6;
 }
 
-/* Navigation */
-nav {
-  margin-bottom: 2rem;
+h1,
+h2,
+h3 {
+  color: #d06060;
+  font-family: 'Economica', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 0.5em 0;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+h1 {
+  font-size: 3.5rem;
+  color: #dddddd;
 }
 
-nav ul li a {
+h1 a {
+  text-transform: none;
+  font-weight: 400;
+  color: inherit;
+}
+
+h1 a:hover {
+  color: #eeeeee;
   text-decoration: none;
-  color: #000;
-  font-weight: 500;
 }
 
-/* Footer */
-footer {
-  margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: 1px solid #ddd;
-  font-size: 0.9rem;
-  color: #555;
-  text-align: center;
+h2 {
+  font-size: 2rem;
+  color: #bbbbbb;
 }
 
-/* Utilities */
-.text-center {
-  text-align: center;
+h3 {
+  font-size: 1.5rem;
+  color: #aaaaaa;
 }
-
-.mt-1 { margin-top: 1rem; }
-.mt-2 { margin-top: 2rem; }
-.mt-4 { margin-top: 4rem; }
-
-.mb-1 { margin-bottom: 1rem; }
-.mb-2 { margin-bottom: 2rem; }
-.mb-4 { margin-bottom: 4rem; }
-
-.hidden { display: none; }
