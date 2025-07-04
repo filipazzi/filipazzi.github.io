@@ -143,7 +143,7 @@ ul.menu li a:hover {color:#eee; text-decoration:none;}
 .hide {display:none;}
 
 /* Light styles, apply by using class="light" on the body HTML element */
-body.light {background:#f5f5f5 url(images/background-light.jpg) top center no-repeat; color:#555;}
+body.light {background:#fdfdfd url(images/background-light.jpg) top center no-repeat; color:#555;}
 body.light a {color:#d06060;}
 body.light a:hover {color:#555;}
 body.light h1 {color:#888; font-size:3.6em; margin-bottom:0;}
@@ -153,9 +153,9 @@ body.light h1, body.light h2, body.light h3 {color:#d06060;}
 body.light ul.menu {border-top:1px solid #ddd;}
 body.light ul.menu li {border-bottom:1px solid #ddd;}
 body.light ul.menu li a:hover {color:#333;}
-body.light .separator {background: #f5f5f5 url(images/insidebg2-light.jpg) bottom center no-repeat; border-bottom:1px dotted #ccc;}
+body.light .separator {background: #fdfdfd url(images/insidebg2-light.jpg) bottom center no-repeat; border-bottom:1px dotted #ccc;}
 body.light .slogan {color:#888;}
-body.light #footer {background:#f5f5f5 url(images/insidebg-light.jpg) top center no-repeat;}
+body.light #footer {background:#fdfdfd url(images/insidebg-light.jpg) top center no-repeat;}
 body.light #footer .col {color:#555; border-top:1px dotted #ccc;}
 body.light #footer a {color:#555; border-bottom:1px dotted #ddd;}
 body.light #footer a:hover {color:#444; border-bottom:1px dotted #eee;}
